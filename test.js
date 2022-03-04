@@ -1,40 +1,90 @@
 var menubox = document.getElementById("menubox");
 var menubtn = document.getElementById("menubtn");
-var link1 = document.getElementById("link1");
+var home = document.getElementById("home-link");
+var updates = document.getElementById("updates-link");
+var testimonials = document.getElementById("testimonials-link");
+var gallery = document.getElementById("gallery-link");
+var contact = document.getElementById("contact-link");
+var facebook = document.getElementById("facebook-link");
 
 menubtn.onclick = function fnMenubox() {
   if (menubox.className == "open") {
     menubox.className = "";
-    link1.className = "";
-    link2.className = "";
-    link3.className = "";
-    link4.className = "";
-    link5.className = "";
+    home.className = "";
+    updates.className = "";
+    testimonials.className = "";
+    gallery.className = "";
+    contact.className = "";
+    facebook.className = "";
   } else {
     menubox.className = "open";
-    link1.className = "open";
-    link2.className = "open";
-    link3.className = "open";
-    link4.className = "open";
-    link5.className = "open";
+    home.className = "open";
+    updates.className = "open";
+    testimonials.className = "open";
+    gallery.className = "open";
+    contact.className = "open";
+    facebook.className = "open";
   }
 };
-/*
-var h2 = document.getElementById("h2");
-var h3 = document.getElementById("h3");
-var h4 = document.getElementById("h4");
-var h5 = document.getElementById("h5");
 
-window.onload = function indexHtagAnim() {
-    h2.className = "load";
-    h3.className = "load";
-    h4.className = "load";
-    h5.className = "load";
-    actionbtn.style.display = "block";
-    actionbtn2.style.display = "none";
-    actionbtn3.style.display = "none";
-    actionbtn4.style.display = "none";
+function changeHome(){
+  if (menubox.className == "open"){
+    menubox.className = "";
+    home.className = "";
+    updates.className = "";
+    testimonials.className = "";
+    gallery.className = "";
+    contact.className = "";
+    facebook.className = "";
+  }
 };
+function changeUpdates(){
+  if (menubox.className == "open"){
+    menubox.className = "";
+    home.className = "";
+    updates.className = "";
+    testimonials.className = "";
+    gallery.className = "";
+    contact.className = "";
+    facebook.className = "";
+  }
+};
+function changeTestimonials(){
+  if (menubox.className == "open"){
+    menubox.className = "";
+    home.className = "";
+    updates.className = "";
+    testimonials.className = "";
+    gallery.className = "";
+    contact.className = "";
+    facebook.className = "";
+  }
+};
+function changeGallery(){
+  if (menubox.className == "open"){
+    menubox.className = "";
+    home.className = "";
+    updates.className = "";
+    testimonials.className = "";
+    gallery.className = "";
+    contact.className = "";
+    facebook.className = "";
+  }
+};
+function changeContact(){
+  if (menubox.className == "open"){
+    menubox.className = "";
+    home.className = "";
+    updates.className = "";
+    testimonials.className = "";
+    gallery.className = "";
+    contact.className = "";
+    facebook.className = "";
+  }
+};
+
+/*
+
 
 var home = document.getElementById("home");
 var about = document.getElementById("about");
@@ -55,10 +105,10 @@ function changeHome() {
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
   menubox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  home.className = "";
+  updates.className = "";
+  testimonials.className = "";
+  gallery.className = "";
 }
 function changeAbout() {
   home.style.display = "none";
@@ -70,10 +120,10 @@ function changeAbout() {
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
   menubox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  home.className = "";
+  updates.className = "";
+  testimonials.className = "";
+  gallery.className = "";
 }
 
 function changeProjects() {
@@ -86,10 +136,10 @@ function changeProjects() {
   actionbtn3.style.display = "block";
   actionbtn4.style.display = "none";
   menubox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  home.className = "";
+  updates.className = "";
+  testimonials.className = "";
+  gallery.className = "";
 }
 function changeContact() {
   home.style.display = "none";
@@ -101,9 +151,9 @@ function changeContact() {
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "block";
   menubox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  home.className = "";
+  updates.className = "";
+  testimonials.className = "";
+  gallery.className = "";
 }
 */
