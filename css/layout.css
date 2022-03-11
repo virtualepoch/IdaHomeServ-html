@@ -22,17 +22,28 @@ nav {
   z-index: 5;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  
   margin: 0 auto 0 auto;
 }
+.logo-container{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  object-fit:cover;
+}
 nav img {
-  height: 130px;
-  margin: auto;
+  display:block;
+  height: 80px;
+  margin: 0 auto;
+  
 }
 nav h1 {
+  display: block;
   font-size: 20px;
   line-height: 20px;
-  margin: auto 0 auto 5px;
+  margin: 0 auto;
+  padding: 5px;
   
 }
 
