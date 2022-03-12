@@ -9,6 +9,9 @@
   box-sizing: border-box;
   font-family: "Comfortaa", sans-serif;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 body {
   max-width: 1000px;
   margin: 70px auto 0 auto;
@@ -17,26 +20,18 @@ nav {
   max-width: 1000px;
   background: white;
   position: fixed;
-  top:0;
+  top: 0;
   right: 0;
   z-index: 5;
   left: 0;
   display: flex;
   flex-direction: column;
-  
   margin: 0 auto 0 auto;
 }
-.logo-container{
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  object-fit:cover;
-}
 nav img {
-  display:block;
-  height: 80px;
+  display: block;
+  height: 60px;
   margin: 0 auto;
-  
 }
 nav h1 {
   display: block;
@@ -44,101 +39,90 @@ nav h1 {
   line-height: 20px;
   margin: 0 auto;
   padding: 5px;
-  
 }
-
 #menubtn {
-  position:fixed;
-  top:0;
-  right:0;
+  position: fixed;
+  top: 0;
+  right: 0;
   font-size: 25px;
   color: rgb(0, 0, 0);
   background: white;
-  float: right;
-  
   line-height: 60px;
-  height: 60px;
-  width: 60px;
-  padding: 0 15px;
+  height: 90px;
+  width: 90px;
+  padding: 15px 30px;
   cursor: pointer;
   z-index: 11;
 }
 #menubox {
   position: fixed;
-  width: 1000px;
-  height: 100%;
-  background: rgb(0, 30, 85);
+  z-index: 9;
   top: -333%;
-  margin-top: 60px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1000px;
+  height: calc(100vh - 90px);
+  margin: 90px auto 0 auto;
+  padding: 50px 0;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.5s;
-  z-index: 2;
+  overflow: scroll;
 }
 #menubox.open {
   top: 0;
 }
-a {
-  padding: 10px;
-  color: white;
+#menubox a {
+  color: rgb(0, 0, 0);
   background: inherit;
-  font-size: 25px;
+
   cursor: pointer;
-  max-width: 1000px;
-  border-left: 1px solid white;
 }
 #home-link,
-#updates-link,
+#about-link,
+#services-link,
 #testimonials-link,
-#gallery-link,
 #contact-link,
+#gallery-link,
 #facebook-link {
-  position: fixed;
-  top: -333%;
-  margin-left: 5%;
+  margin: auto;
 }
 #home-link {
-  margin-top: 160px;
   transition: 1.1s;
 }
 #home-link.open {
   top: 0;
 }
 #updates-link {
-  margin-top: 240px;
-
   transition: 0.9s;
 }
 #updates-link.open {
   top: 0;
 }
 #testimonials-link {
-  margin-top: 320px;
-
   transition: 0.7s;
 }
 #testimonials-link.open {
   top: 0;
 }
 #gallery-link {
-  margin-top: 400px;
-
   transition: 0.5s;
 }
 #gallery-link.open {
   top: 0;
 }
 #contact-link {
-  margin-top: 480px;
-
   transition: 0.5s;
 }
 #contact-link.open {
   top: 0;
 }
 #facebook-link {
-  margin-top: 560px;
-
   transition: 0.5s;
 }
 #facebook-link.open {
@@ -156,7 +140,6 @@ a {
   height: 55px;
   width: 55px;
   position: fixed;
-  margin: auto;
   bottom: 10px;
   right: 10px;
   box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
@@ -170,8 +153,8 @@ a {
   height: 300px;
   width: 300px;
   position: absolute;
-  bottom: -137px;
-  right: -137px;
+  bottom: -125px;
+  right: -125px;
   animation: rotate 4s infinite linear;
   z-index: -1;
 }
@@ -198,7 +181,17 @@ a {
   cursor: pointer;
   z-index: 5;
 }
+#to-top-button {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
 
+  height: 55px;
+  width: 55px;
+
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
+  border-radius: 5px;
+}
 footer {
   background: rgb(236, 251, 255, 0.8);
   height: 160px;
