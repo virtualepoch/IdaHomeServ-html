@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/section.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
   <title>IdaHomeServ LLC - Pool and Spa</title>
 </head>
@@ -17,7 +16,7 @@
   <nav>
     <img src="logos/FullColor_IconOnly_1024x1024_72dpi.jpg" alt="IdaHomeServ-logo" />
     <h1>IdaHomeServ LLC</h1>
-    <div id="menubtn">
+    <div id="menubtn" onclick="menuOpen()">
       <i class="fas fa-bars"></i>
     </div>
   </nav>
@@ -32,18 +31,42 @@
         Facebook</a></li>
   </div>
   <div class="bottom-nav">
-    <a href="tel:+1208-761-5818" id="actionbtn"></a>
+    <a href="sms:+1208-794-2695&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520schedule%2520an%2520appointment%2520for..." id="actionbtn"><i class="fa-solid fa-message-dots"></i></a>
   </div>
-  <a onclick="scrollToTop()" id="to-top-button"><span class="bi bi-chevron-up"></span></a>
+  <a onclick="scrollToTop()" id="to-top-button"><i class="fas fa-chevron-up"></i></a>
   <section id="main">
     <div id="row1">
       <img src="/images/hero-pool.jpg" alt="pool-view" />
     </div>
     <div id="row2">
       <h1>IdaHomeServ LLC Pool and Spa</h1>
-      <h2>Pool Cleaning Service in Boise</h2>
-      <h2>Open today until 5:00 PM</h2>
-      <a href="tel:+1208-761-5818" id="getquote">GET QUOTE</a>
+      <p>Since (your year), IdaHomeServ Pool And Spa has delivered quality services to clients by providing them with
+        the professional care they deserve. Get in touch today to learn more about our Swimming Pool and Spa Repair and
+        Cleaning Services.</p>
+      <a href="tel:+1208-761-5818" id="getquote">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h1>About Us</h1>
+    <p>Who We Are</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit dolor ad vero, aut ex. Reprehenderit
+      odit quaerat obcaecati officiis delectus? Est tempora qui ex architecto ipsa nisi expedita obcaecati.</p>
+    <a href="" id="learnmore">Learn More</a>
+  </section>
+
+  <section id="services">
+    <h1>Professional Services</h1>
+    <p>What We Do</p>
+    <div class="row-1">
+      <div id="box-1" style="height: 300px;border: solid blue;">Image #1</div>
+      <div class="box-2">
+        <h1>Pool Opening And Closing Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
+          itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus expedita.
+        </p>
+        <a href="" id="schedule">Schedule your opening or closing</a>
+      </div>
     </div>
   </section>
 

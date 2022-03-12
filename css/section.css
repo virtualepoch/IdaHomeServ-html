@@ -13,20 +13,63 @@
   text-align: center;
 }
 #row2 h1 {
-  padding: 25px 15px;
+  padding: 60px 15px;
   font-size: 30px;
+  color: #107fe0;
 }
-#row2 h2 {
-  padding: 2px;
+#row2 p {
+    font-size: 17px;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0 20px;
+}
+#getquote, #learnmore {
+  display: block;
+  width: 140px;
+  height: 55px;
+  line-height: 55px;
+  border: 2px solid #5f9bce;
   font-size: 15px;
+  color: #5f9bce;
+  border-radius: 55px;
+  background-color: inherit;
+  margin: 20px auto 30px auto;
+  }
+#about{
+  padding: 100px 50px;
+  background-color: #e4eef6;
+  text-align: center;
+  line-height: 40px;
 }
-#getquote {
+#about h1{
+  padding: 10px;
+  color: #1d71bb;
+}
+#about p{
+  padding-top: 10px;
+  color: #2b2d2e;
+}
+
+#services{
+  text-align: center;
+  padding: 110px 0;
+  border: solid blue;
+}
+#services h1, #services p{
+  margin: 50px auto;
+}
+#schedule {
   display: block;
   width: fit-content;
-  border: 3px solid black;
+  height: 55px;
+  line-height: 55px;
+  border: 2px solid #5f9bce;
   font-size: 15px;
-  background-color: #5f9bce;
-  margin: 20px auto 20px auto;
+  color: #5f9bce;
+  border-radius: 55px;
+  background-color: inherit;
+  margin: 20px auto 30px auto;
+  padding: 0 10px;
 }
 #updates,
 #testimonials,

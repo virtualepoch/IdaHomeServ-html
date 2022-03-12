@@ -1,87 +1,29 @@
 var menubox = document.getElementById("menubox");
-var menubtn = document.getElementById("menubtn");
-var home = document.getElementById("home-link");
-var updates = document.getElementById("updates-link");
-var testimonials = document.getElementById("testimonials-link");
-var gallery = document.getElementById("gallery-link");
-var contact = document.getElementById("contact-link");
-var facebook = document.getElementById("facebook-link");
 
-menubtn.onclick = function fnMenubox() {
+function menuOpen() {
   if (menubox.className == "open") {
     menubox.className = "";
-    home.className = "";
-    updates.className = "";
-    testimonials.className = "";
-    gallery.className = "";
-    contact.className = "";
-    facebook.className = "";
   } else {
     menubox.className = "open";
-    home.className = "open";
-    updates.className = "open";
-    testimonials.className = "open";
-    gallery.className = "open";
-    contact.className = "open";
-    facebook.className = "open";
+    
   }
 };
 
-function changeHome(){
-  if (menubox.className == "open"){
-    menubox.className = "";
-    home.className = "";
-    updates.className = "";
-    testimonials.className = "";
-    gallery.className = "";
-    contact.className = "";
-    facebook.className = "";
-  }
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+window.onscroll = function () {
+  scroll();
 };
-function changeUpdates(){
-  if (menubox.className == "open"){
-    menubox.className = "";
-    home.className = "";
-    updates.className = "";
-    testimonials.className = "";
-    gallery.className = "";
-    contact.className = "";
-    facebook.className = "";
+
+function scroll() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("to-top-button").style.bottom = "10px";
+  } else {
+    document.getElementById("to-top-button").style.bottom = "-100px";
   }
-};
-function changeTestimonials(){
-  if (menubox.className == "open"){
-    menubox.className = "";
-    home.className = "";
-    updates.className = "";
-    testimonials.className = "";
-    gallery.className = "";
-    contact.className = "";
-    facebook.className = "";
-  }
-};
-function changeGallery(){
-  if (menubox.className == "open"){
-    menubox.className = "";
-    home.className = "";
-    updates.className = "";
-    testimonials.className = "";
-    gallery.className = "";
-    contact.className = "";
-    facebook.className = "";
-  }
-};
-function changeContact(){
-  if (menubox.className == "open"){
-    menubox.className = "";
-    home.className = "";
-    updates.className = "";
-    testimonials.className = "";
-    gallery.className = "";
-    contact.className = "";
-    facebook.className = "";
-  }
-};
+}
 
 /*
 
