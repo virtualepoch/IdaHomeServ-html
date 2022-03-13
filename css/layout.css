@@ -95,11 +95,10 @@ nav h1 {
   margin: auto;
 }
 #menubox a:hover {
-  color: black;
   background: rgb(219, 250, 247);
-  padding: 7px 13px;
-  border-radius: 3px;
-  transition: 0.7s;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 #actionbtn {
   height: 55px;
@@ -134,14 +133,14 @@ nav h1 {
   height: 95%;
   width: 98%;
   position: absolute;
-  background-color: #5f9bce;
+  background-color: #107fe0;
   top: 3%;
   left: 1%;
   color: rgb(255, 255, 255);
   display: grid;
   place-items: center;
   font-size: 30px;
-  
+
   border-radius: 5px;
   cursor: pointer;
   z-index: 5;
@@ -154,7 +153,7 @@ nav h1 {
   width: 55px;
   padding: auto;
   color: white;
-  background-color: #5f9bce;
+  background-color: #107fe0;
   font-size: 30px;
   box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
   border-radius: 5px;
