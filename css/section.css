@@ -115,15 +115,16 @@
   margin: 20px auto 30px auto;
   padding: 0 10px;
 }
-#updates,
+
 #testimonials,
 #gallery,
 #contact {
+  padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
   font-size: 10px;
 }
-#updates h1,
+
 #testimonials h1,
 #gallery h1,
 #contact h1 {
@@ -132,6 +133,7 @@
   font-size: 20px;
   text-align: center;
   flex: 100%;
+  color: #107fe0;
 }
 .flex-box {
   flex: 100%;
@@ -202,4 +204,5 @@
 .hours-box {
   flex: 30%;
   margin: 20px auto 50px auto;
+  text-align: center;
 }
