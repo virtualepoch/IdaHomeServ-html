@@ -5,9 +5,8 @@ function menuOpen() {
     menubox.className = "";
   } else {
     menubox.className = "open";
-    
   }
-};
+}
 
 function scrollToTop() {
   window.scrollTo(0, 0);
