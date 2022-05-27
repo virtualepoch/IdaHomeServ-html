@@ -8,18 +8,16 @@ function menuOpen() {
   }
 }
 
-const mainSection = document.getElementById('main-section')
-
 function scrollToTop() {
-  mainSection.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
-mainSection.onscroll = function () {
+window.onscroll = function () {
   scroll();
 };
 
 function scroll() {
-  if (mainSection.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("to-top-button").style.bottom = "10px";
   } else {
     document.getElementById("to-top-button").style.bottom = "-100px";

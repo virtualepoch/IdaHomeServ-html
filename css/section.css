@@ -25,18 +25,21 @@
   padding: 0 11px 40px 11px;
   background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0));
 }
-#getquote,
-#learnmore {
-  display: block;
-  width: 140px;
+.button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
   height: 55px;
-  line-height: 55px;
-  border: 2px solid #107fe0;
+  padding: 20px;
   font-size: 15px;
   color: #107fe0;
   border-radius: 55px;
   background-color: white;
   margin: 20px auto 30px auto;
+  box-shadow: 0 5px 5px 5px rgb(0, 0, 0, 0.5);
+}
+.phone-button {
+  background: url(/icons/phone-solid.svg) 50% 50% / 50% 50% no-repeat white;
 }
 #about {
   padding: 100px 50px;
@@ -56,6 +59,7 @@
 #services {
   text-align: center;
   padding: 110px 0;
+  background: linear-gradient(to right, rgb(255, 255, 255, 0.5), rgb(135, 206, 235, 0.5));
 }
 #services h1 {
   color: #107fe0;
@@ -125,6 +129,7 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 10px;
+  background: linear-gradient(to right, rgb(135, 206, 235, 0.5), rgb(255, 255, 255, 0.5));
 }
 
 #testimonials h1,
