@@ -13,184 +13,200 @@
 </head>
 
 <body>
+  <div class="pool-gif-container">
+    <div id="pool-gif"></div>
+  </div>
   <nav>
-    <img src="logos/FullColor_IconOnly_1024x1024_72dpi.jpg" alt="IdaHomeServ-logo" />
-    <h1>IdaHomeServ LLC</h1>
-    <div id="menubtn" onclick="menuOpen()">
-      <i class="fas fa-bars"></i>
+    <div class="top-nav">
+      <div class="left-side-container"></div>
+      <div class="center-container">
+        <div class="top-nav-logo"></div>
+        <h1 class="top-nav-heading">IdaHomeServ LLC</h1>
+      </div>
+      <div id="menubtn" onclick="menuOpen()"></div>
     </div>
   </nav>
+
   <div id="menubox">
-    <li id="home-link"><a href="" onclick="scrollToTop() menuOpen()">Home</a></li>
-    <li id="about-link"><a href="#about" onclick="menuOpen()">About</a></li>
-    <li id="services-link"><a href="#services" onclick="menuOpen()">Services</a></li>
-    <li id="testimonials-link"><a href="#testimonials" onclick="menuOpen()">Testimonials</a></li>
-    <li id="gallery-link"><a href="#gallery" onclick="menuOpen()">Media Gallery</a></li>
-    <li id="contact-link"><a href="#contact" onclick="menuOpen()">Contact</a></li>
-    <li id="facebook-link"><a href="https://www.facebook.com/IdaHomeServllC" onclick="menuOpen()">Visit us on
-        Facebook</a></li>
+    <div id="home-link"><a href="" onclick="scrollToTop() menuOpen()">Home</a></div>
+    <div id="about-link"><a href="#about" onclick="menuOpen()">About</a></div>
+    <div id="services-link"><a href="#services" onclick="menuOpen()">Services</a></div>
+    <div id="testimonials-link"><a href="#testimonials" onclick="menuOpen()">Testimonials</a></div>
+    <div id="gallery-link"><a href="#gallery" onclick="menuOpen()">Media Gallery</a></div>
+    <div id="contact-link"><a href="#contact" onclick="menuOpen()">Contact</a></div>
+    <div id="facebook-link"><a href="https://www.facebook.com/IdaHomeServllC" onclick="menuOpen()">Visit us on
+        Facebook</a></div>
   </div>
   <div class="bottom-nav">
     <a href="sms:+1208-761-5818;?body=Hi, I'd like to schedule an appointment for..." id="actionbtn"></a>
   </div>
-  <a onclick="scrollToTop()" id="to-top-button"><i class="fas fa-chevron-up"></i></a>
-  <section id="main">
-    <div id="row1">
-      <img src="/images/hero-pool.jpg" alt="pool-view" />
-    </div>
-    <div id="row2">
-      <h1>IdaHomeServ LLC Pool and Spa</h1>
-      <p>We are your complete pool and spa service and maintenance company. We offer routine cleaning and preventative
-        maintenance along with equipment repair and upgrades. We have 13 years of local pool experience and are CPO
-        Certified. Servicing Boise, Meridian, Eagle, Star and surrounding areas.</p>
-      <a href="tel:+1208-761-5818" id="getquote">Get in Touch</a>
-    </div>
-  </section>
+  <a id="to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></a>
 
-  <section id="about">
-    <h1>About Us</h1>
-    <p>Who We Are</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit dolor ad vero, aut ex. Reprehenderit
-      odit quaerat obcaecati officiis delectus? Est tempora qui ex architecto ipsa nisi expedita obcaecati.</p>
-    <a href="" id="learnmore" onclick="return false;">Learn More</a>
-  </section>
 
-  <section id="services">
-    <h1>Professional Services</h1>
-    <p>What We Do</p>
-    <div class="row-1">
-      <div class="box-1">Image #1</div>
-      <div class="box-2">
-        <h1>Pool Opening And Closing Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
-          itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus expedita.
-        </p>
-        <a href="" id="schedule" onclick="return false;">Schedule your opening or closing</a>
+  <section id="main-section">
+    <section id="landing">
+      <div id="row1">
+        <h1>IdaHomeServ LLC Pool and Spa</h1>
+        <p>We are your complete pool and spa service and maintenance company. We offer routine cleaning and preventative
+          maintenance along with equipment repair and upgrades. We have 13 years of local pool experience and are CPO
+          Certified. Servicing Boise, Meridian, Eagle, Star and surrounding areas.</p>
+        <a href="tel:+1208-761-5818" id="getquote">Get in Touch</a>
       </div>
-    </div>
-    <div class="row-1">
-      <div class="box-1">Image #2</div>
-      <div class="box-2">
-        <h1>Equipment Troubleshooting, Repair and Replacement</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
-          itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus expedita.
-        </p>
-        <a href="" id="schedule" onclick="return false;">Schedule your repair</a>
-      </div>
-    </div>
-    <div class="row-1">
-      <div class="box-1">Image #3</div>
-      <div class="box-2">
-        <h1>Pool Maintenance</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
-          itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus expedita.
-        </p>
-        <a href="" id="schedule" onclick="return false;">Schedule a Maintenance Visit</a>
-      </div>
-    </div>
-    <div class="row-1">
-      <div class="box-1">Image #4</div>
-      <div class="box-2">
-        <h1>Winter Cover Installation</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
-          itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus expedita.
-        </p>
-        <a href="" id="schedule" onclick="return false;">Contact Us About A Cover</a>
-      </div>
-      <div id="contact-row">
-        <p>Whatever the job, we've got you covered.</p>
-        <p>Contact us via text, email, or just give us a call.</p>
-        <div class="contact-link-row">
-          <a href="sms:+1208-761-5818"><i class="fa-solid fa-comment-dots"></i></a>
-          <a href=""><i class="fa-solid fa-envelope"></i></a>
-          <a href="tel:+1208-761-5818"><i class="fa-solid fa-phone"></i></a>
-        </div>
-        <p>You can visit us on Facebook or Instagram.</p>
-        <p>We'd also really appreciate leaving a Google review.</p>
-        <div class="contact-link-row">
-          <a href="https://www.facebook.com/IdaHomeServllC"><i class="fa-brands fa-facebook-square"></i></a>
-          <a href=""><i class="fa-brands fa-instagram-square"></i></a>
-          <a href="https://search.google.com/local/writereview?placeid=ChIJ9z5_8ixVrlQRj3rUsTrJhnU"><i
-              class="fa-brands fa-google"></i></a>
+    </section>
+
+    <section id="about">
+      <h1>About Us</h1>
+      <p>Who We Are</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit dolor ad vero, aut ex. Reprehenderit
+        odit quaerat obcaecati officiis delectus? Est tempora qui ex architecto ipsa nisi expedita obcaecati.</p>
+      <a href="" id="learnmore" onclick="return false;">Learn More</a>
+    </section>
+
+    <section id="services">
+      <h1>Professional Services</h1>
+      <p>What We Do</p>
+      <div class="row-1">
+        <div class="box-1">Image #1</div>
+        <div class="box-2">
+          <h1>Pool Opening And Closing Services</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
+            itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
+            expedita.
+          </p>
+          <a href="" id="schedule" onclick="return false;">Schedule your opening or closing</a>
         </div>
       </div>
-    </div>
+      <div class="row-1">
+        <div class="box-1">Image #2</div>
+        <div class="box-2">
+          <h1>Equipment Troubleshooting, Repair and Replacement</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
+            itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
+            expedita.
+          </p>
+          <a href="" id="schedule" onclick="return false;">Schedule your repair</a>
+        </div>
+      </div>
+      <div class="row-1">
+        <div class="box-1">Image #3</div>
+        <div class="box-2">
+          <h1>Pool Maintenance</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
+            itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
+            expedita.
+          </p>
+          <a href="" id="schedule" onclick="return false;">Schedule a Maintenance Visit</a>
+        </div>
+      </div>
+      <div class="row-1">
+        <div class="box-1">Image #4</div>
+        <div class="box-2">
+          <h1>Winter Cover Installation</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quo quibusdam magni autem eaque et
+            itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
+            expedita.
+          </p>
+          <a href="" id="schedule" onclick="return false;">Contact Us About A Cover</a>
+        </div>
+        <div id="contact-row">
+          <p>Whatever the job, we've got you covered.</p>
+          <p>Contact us via text, email, or just give us a call.</p>
+          <div class="contact-link-row">
+            <a href="sms:+1208-761-5818"><i class="fa-solid fa-comment-dots"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+1208-761-5818"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <p>You can visit us on Facebook or Instagram.</p>
+          <p>We'd also really appreciate leaving a Google review.</p>
+          <div class="contact-link-row">
+            <a href="https://www.facebook.com/IdaHomeServllC"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJ9z5_8ixVrlQRj3rUsTrJhnU"><i
+                class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="flex-container">
+      <h1>TESTIMONIALS</h1>
+      <div class="flex-box">
+        <p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked" style="padding-right: 10px;"></span>
+          4 months ago
+        </p>
+        <p>"Paul showed up promptly and was very easy to communicate with through text as well. He winterized our pool
+          and
+          has done repairs for us in the past. I would highly recommend!"</p>
+        <p>- Lyric P</p>
+      </div>
+      </div>
+      <div class="flex-box">
+        <p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked" style="padding-right: 10px;"></span>4 months ago
+        </p>
+        <p>"Extremely happy with the swimming pool services we received. Paul always kept us informed and showed up
+          promptly when scheduled. Thank you!"</p>
+        <p>- Kimberli T</p>
+      </div>
+      </div>
+      <div class="flex-box">
+        <p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked" style="padding-right: 10px;"></span>4 months ago
+        </p>
+        <p>"Repaired our pool heater. Actually caught the issue that another pool company missed. Paul knew his stuff."
+        </p>
+        <p>- Jeff B</p>
+      </div>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ9z5_8ixVrlQRj3rUsTrJhnU" id="schedule">Leave a
+        Review</a>
+    </section>
+
+    <section id="gallery" class="flex-container">
+      <h1>GALLERY</h1>
+      <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
+      <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
+      <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
+    </section>
+
+    <section id="contact">
+      <h1>CONTACT US</h1>
+      <img src="images/james-paul-sign.jpg">
+      <a href="tel:+1208-761-5818" id="schedule">CALL NOW</a>
+      <img src="/images/map.png" />
+      <div class="address-box">
+        <h1>Address</h1>
+        <p>8670 N. Pembrook Dr.</p>
+        <p>Boise, Idaho 83704</p>
+      </div>
+      <div class="hours-box">
+        <h1>Business Hours</h1>
+        <p>Monday-Friday: 8am-5pm</p>
+        <p>Closed Saturday and Sunday</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy IdaHomeServ LLC Pool and Spa</p>
+      <p>Website by www.virtualepoch.com</p>
+    </footer>
+
   </section>
 
-  <section id="testimonials" class="flex-container">
-    <h1>TESTIMONIALS</h1>
-    <div class="flex-box">
-      <p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked" style="padding-right: 10px;"></span>
-        4 months ago
-      </p>
-      <p>"Paul showed up promptly and was very easy to communicate with through text as well. He winterized our pool and
-        has done repairs for us in the past. I would highly recommend!"</p>
-      <p>- Lyric P</p>
-    </div>
-    </div>
-    <div class="flex-box">
-      <p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked" style="padding-right: 10px;"></span>4 months ago
-      </p>
-      <p>"Extremely happy with the swimming pool services we received. Paul always kept us informed and showed up
-        promptly when scheduled. Thank you!"</p>
-      <p>- Kimberli T</p>
-    </div>
-    </div>
-    <div class="flex-box">
-      <p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked" style="padding-right: 10px;"></span>4 months ago
-      </p>
-      <p>"Repaired our pool heater. Actually caught the issue that another pool company missed. Paul knew his stuff."
-      </p>
-      <p>- Jeff B</p>
-    </div>
-    <a href="https://search.google.com/local/writereview?placeid=ChIJ9z5_8ixVrlQRj3rUsTrJhnU" id="schedule">Leave a
-      Review</a>
-  </section>
-
-  <section id="gallery" class="flex-container">
-    <h1>GALLERY</h1>
-    <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
-    <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
-    <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
-  </section>
-
-  <section id="contact">
-    <h1>CONTACT US</h1>
-    <img src="images/james-paul-sign.jpg">
-    <a href="tel:+1208-761-5818" id="schedule">CALL NOW</a>
-    <img src="/images/map.png" />
-    <div class="address-box">
-      <h1>Address</h1>
-      <p>8670 N. Pembrook Dr.</p>
-      <p>Boise, Idaho 83704</p>
-    </div>
-    <div class="hours-box">
-      <h1>Business Hours</h1>
-      <p>Monday-Friday: 8am-5pm</p>
-      <p>Closed Saturday and Sunday</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy IdaHomeServ LLC Pool and Spa</p>
-    <p>Website by www.virtualepoch.com</p>
-  </footer>
   <script src="main.js"></script>
+
 </body>
 
 </html>
