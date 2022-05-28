@@ -41,9 +41,16 @@
 .phone-button {
   background: url(/icons/phone-solid.svg) 50% 50% / 50% 50% no-repeat white;
 }
+#about,
+#services,
+#testimonials,
+#gallery,
+#contact {
+  background: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.5), #107fe0);
+}
 #about {
-  padding: 100px 50px;
-  background: linear-gradient(rgb(255, 255, 255, 0.5), #107fe0);
+  padding: 77px 50px;
+
   text-align: center;
   line-height: 40px;
 }
@@ -59,7 +66,7 @@
 #services {
   text-align: center;
   padding: 110px 0;
-  background: linear-gradient(to right, rgb(255, 255, 255, 0.5), rgb(135, 206, 235, 0.5));
+  background: linear-gradient(rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.5), #107fe0);
 }
 #services h1 {
   color: #107fe0;
@@ -85,7 +92,6 @@
 }
 #contact-row {
   padding-top: 50px;
-  background-color: aliceblue;
 }
 #contact-row p {
   margin: 0 20px;
@@ -106,6 +112,7 @@
   font-size: 30px;
   color: #107fe0;
   cursor: pointer;
+  background: white;
 }
 
 #schedule {
@@ -129,18 +136,19 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 10px;
-  background: linear-gradient(to right, rgb(135, 206, 235, 0.5), rgb(255, 255, 255, 0.5));
 }
-
+#about h1,
+#services h1,
 #testimonials h1,
 #gallery h1,
 #contact h1 {
   display: inline-block;
   margin: 10px auto;
-  font-size: 20px;
+  font-size: 33px;
   text-align: center;
   flex: 100%;
   color: #107fe0;
+  background: radial-gradient(rgb(255, 255, 255,.7),rgb(255, 255, 255,0),rgb(255, 255, 255,0));
 }
 .flex-box {
   flex: 100%;

@@ -52,7 +52,7 @@ nav {
   height: 50px;
   width: 61px;
   margin: 5px auto;
-  background: url(/logos/FullColor_TransparentBg_72dpi-111.png) 50% 50% / 100% 100%;
+  background: url(/logos/FullColor_TransparentBg_72dpi-111.png) 50% 50% / 70% 70% no-repeat;
 }
 #menubtn {
   height: 50px;
@@ -172,9 +172,10 @@ nav {
   line-height: 55px;
 }
 #main-section {
-  max-width: 1100px;
+  max-width: 1200px;
   height: calc(100vh - 87px);
   margin: 87px auto 0 auto;
+  padding: 0 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
