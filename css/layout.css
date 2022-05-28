@@ -55,7 +55,7 @@ nav {
   width: 50px;
   background: url(/icons/bars-solid.svg) 50% 50% / 50% 50% no-repeat;
   border-radius: 5px;
-  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0,.1) inset;
+  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0, 0.1) inset;
   cursor: pointer;
 }
 #menubox {
@@ -78,8 +78,9 @@ nav {
   transition: all 0.7s ease-in-out;
   overflow: auto;
 }
-#menubox a{
+#menubox a {
   color: black;
+  padding: 11px;
 }
 #menubox.open {
   right: 0;
@@ -92,10 +93,13 @@ nav {
 #gallery-link,
 #facebook-link {
   margin: auto;
-  padding: 11px;
   border-radius: 5px;
-  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0,.1) inset;
-
+  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0, 0.1) inset;
+}
+#facebook-link {
+  width: 50%;
+  height: 50px;
+  background: url(/icons/facebook-square-brands.svg) 50% 50% / 70% 90% no-repeat;
 }
 #actionbtn {
   height: 55px;
