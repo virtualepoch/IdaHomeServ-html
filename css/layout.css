@@ -54,6 +54,9 @@ nav {
   height: 50px;
   width: 50px;
   background: url(/icons/bars-solid.svg) 50% 50% / 50% 50% no-repeat;
+  border-radius: 5px;
+  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0,.1) inset;
+  cursor: pointer;
 }
 #menubox {
   position: fixed;
@@ -72,16 +75,14 @@ nav {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  transition: all 0.5s;
+  transition: all 0.7s ease-in-out;
   overflow: auto;
+}
+#menubox a{
+  color: black;
 }
 #menubox.open {
   right: 0;
-}
-#menubox a {
-  color: rgb(0, 0, 0);
-  background: inherit;
-  cursor: pointer;
 }
 #home-link,
 #about-link,
@@ -92,12 +93,9 @@ nav {
 #facebook-link {
   margin: auto;
   padding: 11px;
-}
-#menubox a:hover {
-  background: rgb(219, 250, 247);
-  padding: 15px 20px;
   border-radius: 5px;
-  transition: 0.5s;
+  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0,.1) inset;
+
 }
 #actionbtn {
   height: 55px;
@@ -170,7 +168,7 @@ nav {
 #main-section {
   max-width: 1200px;
   height: calc(100vh - 87px);
-  margin: 87px auto 0 auto;
+  margin: 55px auto 0 auto;
   padding: 0 22px;
   display: flex;
   flex-direction: column;

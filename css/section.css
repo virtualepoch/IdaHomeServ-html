@@ -23,18 +23,26 @@
   padding: 0 11px 40px 11px;
   background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0));
 }
+.button-wrapper{
+  height: fit-content;
+  width: fit-content;
+  font-size: 15px;
+ 
+  border-radius: 55px;
+  background-color: white;
+  margin: 20px auto 30px auto;
+  box-shadow: 0 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
 .button {
   display: flex;
   align-items: center;
   width: fit-content;
   height: 55px;
   padding: 20px;
-  font-size: 15px;
+  border: 1px solid white;
+border-radius: 55px;
+  box-shadow: 0 -5px 5px 2px rgb(0, 0, 0, 0.3) inset;
   color: #107fe0;
-  border-radius: 55px;
-  background-color: white;
-  margin: 20px auto 30px auto;
-  box-shadow: 0 5px 5px 5px rgb(0, 0, 0, 0.3);
 }
 .phone-button {
   background: url(/icons/phone-solid.svg) 50% 50% / 50% 50% no-repeat white;

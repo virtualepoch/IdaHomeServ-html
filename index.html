@@ -29,13 +29,14 @@
   </nav>
 
   <div id="menubox">
-    <div id="home-link"><a href="" onclick="scrollToTop() menuOpen()">Home</a></div>
-    <div id="about-link"><a href="#about" onclick="menuOpen()">About</a></div>
-    <div id="services-link"><a href="#services" onclick="menuOpen()">Services</a></div>
-    <div id="testimonials-link"><a href="#testimonials" onclick="menuOpen()">Testimonials</a></div>
-    <div id="gallery-link"><a href="#gallery" onclick="menuOpen()">Media Gallery</a></div>
-    <div id="contact-link"><a href="#contact" onclick="menuOpen()">Contact</a></div>
-    <div id="facebook-link"><a href="https://www.facebook.com/IdaHomeServllC" onclick="menuOpen()">Visit us on
+    <div id="home-link" class="button"><a href="" onclick="scrollToTop() menuOpen()">Home</a></div>
+    <div id="about-link" class="button"><a href="#about" onclick="menuOpen()">About</a></div>
+    <div id="services-link" class="button"><a href="#services" onclick="menuOpen()">Services</a></div>
+    <div id="testimonials-link" class="button"><a href="#testimonials" onclick="menuOpen()">Testimonials</a></div>
+    <div id="gallery-link" class="button"><a href="#gallery" onclick="menuOpen()">Media Gallery</a></div>
+    <div id="contact-link" class="button"><a href="#contact" onclick="menuOpen()">Contact</a></div>
+    <div id="facebook-link" class="button"><a href="https://www.facebook.com/IdaHomeServllC" onclick="menuOpen()">Visit
+        us on
         Facebook</a></div>
   </div>
   <div class="bottom-nav">
@@ -50,7 +51,9 @@
         <p>We are your complete pool and spa service and maintenance company. We offer routine cleaning and preventative
           maintenance along with equipment repair and upgrades. We have 13 years of local pool experience and are CPO
           Certified. Servicing Boise, Meridian, Eagle, Star and surrounding areas.</p>
-        <a href="tel:+1208-761-5818" class="button phone-button">Get in Touch</a>
+        <div class="button-wrapper">
+          <a href="tel:+1208-761-5818" class="button phone-button">Get in Touch</a>
+        </div>
       </div>
     </section>
 
@@ -59,7 +62,9 @@
       <p>Who We Are</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit dolor ad vero, aut ex. Reprehenderit
         odit quaerat obcaecati officiis delectus? Est tempora qui ex architecto ipsa nisi expedita obcaecati.</p>
-      <a href="" class="button" onclick="return false;">Learn More</a>
+      <div class="button-wrapper">
+        <a href="" class="button" onclick="return false;">Learn More</a>
+      </div>
     </section>
 
     <section id="services">
@@ -73,7 +78,10 @@
             itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
             expedita.
           </p>
-          <a href="" class="button open-close-button" onclick="return false;">Schedule your opening or closing</a>
+          <div class="button-wrapper">
+            <a href="" class="button open-close-button" onclick="return false;">Schedule your
+              opening or closing</a>
+          </div>
         </div>
       </div>
       <div class="row-1">
@@ -84,7 +92,9 @@
             itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
             expedita.
           </p>
-          <a href="" class="button" onclick="return false;">Schedule your repair</a>
+          <div class="button-wrapper">
+            <a href="" class="button" onclick="return false;">Schedule your repair</a>
+          </div>
         </div>
       </div>
       <div class="row-1">
@@ -95,7 +105,9 @@
             itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
             expedita.
           </p>
-          <a href="" class="button" onclick="return false;">Schedule a Maintenance Visit</a>
+          <div class="button-wrapper">
+            <a href="" class="button" onclick="return false;">Schedule a Maintenance Visit</a>
+          </div>
         </div>
       </div>
       <div class="row-1">
@@ -106,7 +118,9 @@
             itaque amet animi illo? Inventore facilis praesentium minus recusandae qui porro temporibus ducimus
             expedita.
           </p>
-          <a href="" class="button" onclick="return false;">Contact Us About A Cover</a>
+          <div class="button-wrapper">
+            <a href="" class="button" onclick="return false;">Contact Us About A Cover</a>
+          </div>
         </div>
         <div id="contact-row">
           <p>Whatever the job, we've got you covered.</p>
@@ -171,8 +185,10 @@
         <p>- Jeff B</p>
       </div>
     </section>
+    <div class="button-wrapper">
     <a href="https://search.google.com/local/writereview?placeid=ChIJ9z5_8ixVrlQRj3rUsTrJhnU" class="button">Leave a
       Review</a>
+    </div>
 
     <section id="gallery" class="flex-container">
       <h1>GALLERY</h1>
