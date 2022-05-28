@@ -9,7 +9,7 @@
   height: fit-content;
   margin: 0 auto;
   padding: 60px 11px 33px 11px;
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 900;
   background: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.9));
   color: #107fe0;
@@ -27,7 +27,6 @@
   height: fit-content;
   width: fit-content;
   font-size: 15px;
-
   border-radius: 55px;
   background-color: white;
   margin: 20px auto 30px auto;
@@ -78,9 +77,6 @@
   padding: 110px 0;
   background: linear-gradient(rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.5), #107fe0);
 }
-#services h1 {
-  color: #107fe0;
-}
 #services p {
   margin: 40px auto 50px auto;
 }
@@ -108,7 +104,7 @@
 }
 #contact-row p {
   margin: 0 20px;
-  line-height: 40px;
+  line-height: 33px;
 }
 .contact-link-row {
   display: flex;
