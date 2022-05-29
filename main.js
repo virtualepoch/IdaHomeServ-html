@@ -21,7 +21,7 @@ let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
-    menuBox.classList.add('open')
+    menuBox.classList.add("open");
     menuOpen = true;
   } else {
     menuBtn.classList.remove("open");
@@ -30,12 +30,18 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-menuBtn.addEventListener('mousedown', function(){
-  menuBtn.style.boxShadow = 'none';
-})
-menuBtn.addEventListener('mouseup', function(){
-  menuBtn.style.boxShadow = '';
-})
+function openMenu() {
+  menuBtn.classList.remove("open");
+  menuBox.classList.remove("open");
+  menuOpen = false;
+}
+
+menuBtn.addEventListener("mousedown", function () {
+  menuBtn.style.boxShadow = "none";
+});
+menuBtn.addEventListener("mouseup", function () {
+  menuBtn.style.boxShadow = "";
+});
 
 // DO ALL BUTTON AT SAME TIME!
 // const button = document.getElementsByClassName('button')
