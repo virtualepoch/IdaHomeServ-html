@@ -50,15 +50,53 @@ nav {
   margin: 5px auto;
   background: url(/logos/FullColor_TransparentBg_72dpi-111.png) 50% 50% / 70% 70% no-repeat;
 }
-#menubtn {
+#menu-btn {
   height: 50px;
   width: 50px;
-  background: url(/icons/bars-solid.svg) 50% 50% / 50% 50% no-repeat;
-  border-radius: 5px;
-  box-shadow: 1px -2px 5px 2px rgb(0, 0, 0, 0.1) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px rgba(128, 128, 128, 0.1) inset;
 }
-#menubox {
+.menu-btn-burger {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 1px rgb(125, 125, 125,.4) inset;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 1px rgb(125, 125, 125,.4) inset;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before {
+  transform: translateY(-7px);
+}
+.menu-btn-burger::after {
+  transform: translateY(7px);
+}
+/* BUTTON ANIMATION  */
+#menu-btn.open .menu-btn-burger {
+  /* transform: translateX(-50px); */
+  background: transparent;
+  box-shadow: none;
+}
+#menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg);
+}
+#menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg);
+}
+#menu-box {
   position: fixed;
   z-index: 9;
   top: 55px;
@@ -78,11 +116,11 @@ nav {
   transition: all 0.7s ease-in-out;
   overflow: auto;
 }
-#menubox a {
+#menu-box a {
   color: black;
   padding: 11px;
 }
-#menubox.open {
+#menu-box.open {
   right: 0;
 }
 #home-link,

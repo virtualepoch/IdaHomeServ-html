@@ -1,13 +1,3 @@
-var menubox = document.getElementById("menubox");
-
-function menuOpen() {
-  if (menubox.className == "open") {
-    menubox.className = "";
-  } else {
-    menubox.className = "open";
-  }
-}
-
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
@@ -24,7 +14,22 @@ function scroll() {
   }
 }
 
-const menuBtn = document.getElementById('menubtn')
+const menuBtn = document.getElementById("menu-btn");
+var menuBox = document.getElementById("menu-box");
+let menuOpen = false;
+
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add('open')
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
 menuBtn.addEventListener('mousedown', function(){
   menuBtn.style.boxShadow = 'none';
 })
@@ -41,50 +46,50 @@ menuBtn.addEventListener('mouseup', function(){
 //   button.style.boxShadow = ''
 // })
 
-const aboutLink = document.getElementById('about-link')
-aboutLink.addEventListener('mousedown', function(){
-  aboutLink.style.boxShadow = 'none';
-})
-aboutLink.addEventListener('mouseup', function(){
-  aboutLink.style.boxShadow = '';
-})
+const aboutLink = document.getElementById("about-link");
+aboutLink.addEventListener("mousedown", function () {
+  aboutLink.style.boxShadow = "none";
+});
+aboutLink.addEventListener("mouseup", function () {
+  aboutLink.style.boxShadow = "";
+});
 
-const servicesLink = document.getElementById('services-link')
-servicesLink.addEventListener('mousedown', function(){
-  servicesLink.style.boxShadow = 'none';
-})
-servicesLink.addEventListener('mouseup', function(){
-  servicesLink.style.boxShadow = '';
-})
+const servicesLink = document.getElementById("services-link");
+servicesLink.addEventListener("mousedown", function () {
+  servicesLink.style.boxShadow = "none";
+});
+servicesLink.addEventListener("mouseup", function () {
+  servicesLink.style.boxShadow = "";
+});
 
-const testimonialsLink = document.getElementById('testimonials-link')
-testimonialsLink.addEventListener('mousedown', function(){
-  testimonialsLink.style.boxShadow = 'none';
-})
-testimonialsLink.addEventListener('mouseup', function(){
-  testimonialsLink.style.boxShadow = '';
-})
+const testimonialsLink = document.getElementById("testimonials-link");
+testimonialsLink.addEventListener("mousedown", function () {
+  testimonialsLink.style.boxShadow = "none";
+});
+testimonialsLink.addEventListener("mouseup", function () {
+  testimonialsLink.style.boxShadow = "";
+});
 
-const galleryLink = document.getElementById('gallery-link')
-galleryLink.addEventListener('mousedown', function(){
-  galleryLink.style.boxShadow = 'none';
-})
-galleryLink.addEventListener('mouseup', function(){
-  galleryLink.style.boxShadow = '';
-})
+const galleryLink = document.getElementById("gallery-link");
+galleryLink.addEventListener("mousedown", function () {
+  galleryLink.style.boxShadow = "none";
+});
+galleryLink.addEventListener("mouseup", function () {
+  galleryLink.style.boxShadow = "";
+});
 
-const contactLink = document.getElementById('contact-link')
-contactLink.addEventListener('mousedown', function(){
-  contactLink.style.boxShadow = 'none';
-})
-contactLink.addEventListener('mouseup', function(){
-  contactLink.style.boxShadow = '';
-})
+const contactLink = document.getElementById("contact-link");
+contactLink.addEventListener("mousedown", function () {
+  contactLink.style.boxShadow = "none";
+});
+contactLink.addEventListener("mouseup", function () {
+  contactLink.style.boxShadow = "";
+});
 
-const facebookLink = document.getElementById('facebook-link')
-facebookLink.addEventListener('mousedown', function(){
-  facebookLink.style.boxShadow = 'none';
-})
-facebookLink.addEventListener('mouseup', function(){
-  facebookLink.style.boxShadow = '';
-})
+const facebookLink = document.getElementById("facebook-link");
+facebookLink.addEventListener("mousedown", function () {
+  facebookLink.style.boxShadow = "none";
+});
+facebookLink.addEventListener("mouseup", function () {
+  facebookLink.style.boxShadow = "";
+});
