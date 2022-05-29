@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/section.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
   <title>IdaHomeServ LLC - Pool and Spa</title>
 </head>
@@ -205,9 +206,27 @@
         Review</a>
     </div>
 
-    <section id="gallery" class="flex-container">
+    <section id="gallery">
       <h1>GALLERY</h1>
-      <div class="flex-box"><img src="/images/2021-02-03.jpg" alt="image place holder" /></div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/images/2019-09-07.png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="/images/2020-04-21 (3).png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="/images/2020-03-23.png" alt=""></div>
+          <div class="swiper-slide"><img src="/images/2020-04-21 (2).png" alt="">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
 
     <section id="contact">
@@ -228,6 +247,30 @@
         <p>Closed Saturday and Sunday</p>
       </div>
     </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        //direction: 'vertical',
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 
     <footer>
       <p>&copy IdaHomeServ LLC Pool and Spa</p>

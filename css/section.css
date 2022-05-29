@@ -71,7 +71,6 @@
   padding-top: 10px;
   color: #2b2d2e;
 }
-
 #services {
   text-align: center;
   padding: 110px 0;
@@ -124,7 +123,6 @@
   background: white;
   box-shadow: 0 -5px 5px 2px rgb(0, 0, 0, 0.3) inset;
 }
-
 #schedule {
   display: block;
   width: fit-content;
@@ -138,9 +136,7 @@
   margin: 20px auto 30px auto;
   padding: 0 10px;
 }
-
 #testimonials,
-#gallery,
 #contact {
   padding-top: 80px;
   display: flex;
@@ -158,7 +154,7 @@
   text-align: center;
   flex: 100%;
   color: #107fe0;
-  background: radial-gradient(rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
+  background: radial-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.7), rgba(255, 255, 255, 0), rgb(255, 255, 255, 0));
 }
 .flex-box {
   flex: 100%;
@@ -212,6 +208,56 @@
   margin: 0 10px;
   color: #5f9bce;
 }
+/* SWIPER ////////////////////////////////////////////////////////////////////////// */
+#gallery {
+  width: 100%;
+  height: 700px;
+  padding-top: 80px;
+  background: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.5), rgb(16, 127, 224, 0));
+}
+.swiper {
+  position: relative;
+  width: 110%;
+  right: 5%;
+  height: 400px;
+}
+.swiper-slide {
+  padding: 33px;
+  padding-top: 0;
+  border-radius: 10px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #006ed5;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.5);
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: white;
+  border: 1px solid white;
+  border-radius: 11px;
+  padding: 33px 17px;
+}
+.swiper .swiper-pagination {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.swiper .swiper-pagination-bullet {
+  background: white;
+  border: 1px solid black;
+  transform: scale(1.5);
+}
+.swiper .swiper-pagination-bullet-active {
+  background: white;
+  transform: scale(2);
+}
+.swiper .swiper-pagination-bullet:hover {
+  transform: scale(2);
+}
+
 #contact img {
   width: 90%;
   margin: 30px auto;
@@ -224,7 +270,6 @@
   background-color: #5f9bce;
   margin: 20px auto 20px auto;
 }
-
 .address-box,
 .hours-box {
   flex: 30%;

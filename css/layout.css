@@ -7,6 +7,9 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgb(255, 255, 255, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   font-family: "Comfortaa", sans-serif;
 }
 html {
@@ -65,7 +68,7 @@ nav {
   width: 30px;
   height: 4px;
   border-radius: 2px;
-  box-shadow: 0 0 3px 1px rgb(125, 125, 125,.4) inset;
+  box-shadow: 0 0 3px 1px rgb(125, 125, 125, 0.4) inset;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger::before,
@@ -75,7 +78,7 @@ nav {
   width: 30px;
   height: 4px;
   border-radius: 2px;
-  box-shadow: 0 0 3px 1px rgb(125, 125, 125,.4) inset;
+  box-shadow: 0 0 3px 1px rgb(125, 125, 125, 0.4) inset;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger::before {
