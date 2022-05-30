@@ -29,11 +29,9 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
-
 function openMenu() {
   menuBtn.classList.remove("open");
   menuBox.classList.remove("open");
-  menuOpen = false;
 }
 
 menuBtn.addEventListener("mousedown", function () {
@@ -42,7 +40,12 @@ menuBtn.addEventListener("mousedown", function () {
 menuBtn.addEventListener("mouseup", function () {
   menuBtn.style.boxShadow = "";
 });
-
+menuBtn.addEventListener("touchstart", function () {
+  menuBtn.style.boxShadow = "none";
+});
+menuBtn.addEventListener("touchend", function () {
+  menuBtn.style.boxShadow = "";
+});
 // DO ALL BUTTON AT SAME TIME!
 // const button = document.getElementsByClassName('button')
 // button.addEventListener('mousedown', function(){
@@ -59,12 +62,24 @@ aboutLink.addEventListener("mousedown", function () {
 aboutLink.addEventListener("mouseup", function () {
   aboutLink.style.boxShadow = "";
 });
+aboutLink.addEventListener("touchstart", function () {
+  aboutLink.style.boxShadow = "none";
+});
+aboutLink.addEventListener("touchend", function () {
+  aboutLink.style.boxShadow = "";
+});
 
 const servicesLink = document.getElementById("services-link");
 servicesLink.addEventListener("mousedown", function () {
   servicesLink.style.boxShadow = "none";
 });
 servicesLink.addEventListener("mouseup", function () {
+  servicesLink.style.boxShadow = "";
+});
+servicesLink.addEventListener("touchstart", function () {
+  servicesLink.style.boxShadow = "none";
+});
+servicesLink.addEventListener("touchend", function () {
   servicesLink.style.boxShadow = "";
 });
 
@@ -75,12 +90,24 @@ testimonialsLink.addEventListener("mousedown", function () {
 testimonialsLink.addEventListener("mouseup", function () {
   testimonialsLink.style.boxShadow = "";
 });
+testimonialsLink.addEventListener("touchstart", function () {
+  testimonialsLink.style.boxShadow = "none";
+});
+testimonialsLink.addEventListener("touchend", function () {
+  testimonialsLink.style.boxShadow = "";
+});
 
 const galleryLink = document.getElementById("gallery-link");
 galleryLink.addEventListener("mousedown", function () {
   galleryLink.style.boxShadow = "none";
 });
 galleryLink.addEventListener("mouseup", function () {
+  galleryLink.style.boxShadow = "";
+});
+galleryLink.addEventListener("touchstart", function () {
+  galleryLink.style.boxShadow = "none";
+});
+galleryLink.addEventListener("touchend", function () {
   galleryLink.style.boxShadow = "";
 });
 
@@ -91,11 +118,23 @@ contactLink.addEventListener("mousedown", function () {
 contactLink.addEventListener("mouseup", function () {
   contactLink.style.boxShadow = "";
 });
+contactLink.addEventListener("touchstart", function () {
+  contactLink.style.boxShadow = "none";
+});
+contactLink.addEventListener("touchend", function () {
+  contactLink.style.boxShadow = "";
+});
 
 const facebookLink = document.getElementById("facebook-link");
 facebookLink.addEventListener("mousedown", function () {
   facebookLink.style.boxShadow = "none";
 });
 facebookLink.addEventListener("mouseup", function () {
+  facebookLink.style.boxShadow = "";
+});
+facebookLink.addEventListener("touchstart", function () {
+  facebookLink.style.boxShadow = "none";
+});
+facebookLink.addEventListener("touchend", function () {
   facebookLink.style.boxShadow = "";
 });
