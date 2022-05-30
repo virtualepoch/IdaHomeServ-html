@@ -122,7 +122,7 @@ nav {
 #menu-box.open {
   right: 0;
 }
-.menu-btn {
+.link-btn {
   height: 50px;
   width: fit-content;
   display: flex;

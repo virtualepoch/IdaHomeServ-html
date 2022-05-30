@@ -29,23 +29,24 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
 function openMenu() {
   menuBtn.classList.remove("open");
   menuBox.classList.remove("open");
 }
 
-menuBtn.addEventListener("mousedown", function () {
-  menuBtn.style.boxShadow = "none";
-});
-menuBtn.addEventListener("mouseup", function () {
-  menuBtn.style.boxShadow = "";
-});
-menuBtn.addEventListener("touchstart", function () {
-  menuBtn.style.boxShadow = "none";
-});
-menuBtn.addEventListener("touchend", function () {
-  menuBtn.style.boxShadow = "";
-});
+// menuBtn.addEventListener("mousedown", function () {
+//   menuBtn.style.boxShadow = "none";
+// });
+// menuBtn.addEventListener("mouseup", function () {
+//   menuBtn.style.boxShadow = "";
+// });
+// menuBtn.addEventListener("touchstart", function () {
+//   menuBtn.style.boxShadow = "none";
+// });
+// menuBtn.addEventListener("touchend", function () {
+//   menuBtn.style.boxShadow = "";
+// });
 // DO ALL BUTTON AT SAME TIME!
 // const button = document.getElementsByClassName('button')
 // button.addEventListener('mousedown', function(){
@@ -68,6 +69,17 @@ aboutLink.addEventListener("touchstart", function () {
 aboutLink.addEventListener("touchend", function () {
   aboutLink.style.boxShadow = "";
 });
+aboutLink.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
+});
 
 const servicesLink = document.getElementById("services-link");
 servicesLink.addEventListener("mousedown", function () {
@@ -81,6 +93,17 @@ servicesLink.addEventListener("touchstart", function () {
 });
 servicesLink.addEventListener("touchend", function () {
   servicesLink.style.boxShadow = "";
+});
+servicesLink.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
 });
 
 const testimonialsLink = document.getElementById("testimonials-link");
@@ -96,6 +119,17 @@ testimonialsLink.addEventListener("touchstart", function () {
 testimonialsLink.addEventListener("touchend", function () {
   testimonialsLink.style.boxShadow = "";
 });
+testimonialsLink.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
+});
 
 const galleryLink = document.getElementById("gallery-link");
 galleryLink.addEventListener("mousedown", function () {
@@ -109,6 +143,17 @@ galleryLink.addEventListener("touchstart", function () {
 });
 galleryLink.addEventListener("touchend", function () {
   galleryLink.style.boxShadow = "";
+});
+galleryLink.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
 });
 
 const contactLink = document.getElementById("contact-link");
@@ -124,6 +169,17 @@ contactLink.addEventListener("touchstart", function () {
 contactLink.addEventListener("touchend", function () {
   contactLink.style.boxShadow = "";
 });
+contactLink.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
+});
 
 const facebookLink = document.getElementById("facebook-link");
 facebookLink.addEventListener("mousedown", function () {
@@ -137,4 +193,15 @@ facebookLink.addEventListener("touchstart", function () {
 });
 facebookLink.addEventListener("touchend", function () {
   facebookLink.style.boxShadow = "";
+});
+facebookLink.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuBox.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
+    menuOpen = false;
+  }
 });
