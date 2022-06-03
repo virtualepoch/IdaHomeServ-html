@@ -37,7 +37,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 111111;
-  justify-content: center;
   box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.5);
 }
 .top-nav {
@@ -74,9 +73,9 @@ nav {
 .menu-btn-burger::before,
 .menu-btn-burger::after {
   content: "";
-  position: absolute;
   width: 30px;
   height: 3px;
+  position: absolute;
   border-radius: 2px;
   background: rgb(220, 220, 220);
   transition: all 0.5s ease-in-out;
@@ -91,7 +90,6 @@ nav {
 #menu-btn.open .menu-btn-burger {
   /* transform: translateX(-50px); */
   background: transparent;
-  box-shadow: none;
 }
 #menu-btn.open .menu-btn-burger::before {
   transform: rotate(45deg);
