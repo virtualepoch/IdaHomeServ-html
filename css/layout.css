@@ -65,19 +65,19 @@ nav {
 }
 .menu-btn-burger {
   width: 30px;
-  height: 3px;
+  height: 2px;
   border-radius: 2px;
-  background: rgb(208, 208, 208);
+  background: black;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger::before,
 .menu-btn-burger::after {
   content: "";
   width: 30px;
-  height: 3px;
+  height: 2px;
   position: absolute;
   border-radius: 2px;
-  background: rgb(220, 220, 220);
+  background: black;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger::before {
